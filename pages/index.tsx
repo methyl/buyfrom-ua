@@ -2,7 +2,6 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Map from '../components/map'
-import Image from 'next/image'
 
 const navigation = [
   { name: 'O nas', href: '#' },
@@ -94,7 +93,7 @@ export default function IndexPage() {
                   <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="#">
                       <span className="sr-only">Workflow</span>
-                      <Image
+                      <img
                         className="h-8 w-auto sm:h-10"
                         src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"
                         alt=""
@@ -148,7 +147,7 @@ export default function IndexPage() {
                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
-                      <Image
+                      <img
                         className="h-8 w-auto"
                         src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                         alt=""
