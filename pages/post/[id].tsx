@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export async function getStaticPaths() {
   const response = await fetch(
-    'https://jsonplaceholder.typicode.com/posts?_page=1'
+    'https://jsonplaceholder.typicode.com/posts?_page=1',
   )
   const postList = await response.json()
   return {
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   // fetch single post detail
   const response = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${params.id}`
+    `https://jsonplaceholder.typicode.com/posts/${params.id}`,
   )
   const post = await response.json()
   return {
@@ -33,7 +33,7 @@ export default function Post({ title, body }) {
   return (
     <main>
       <Head>
-        <title>{title}</title>
+        <title>asdasd{title}</title>
       </Head>
 
       <h1>{title}</h1>
